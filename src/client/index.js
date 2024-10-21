@@ -4,4 +4,4 @@ import { checkForName } from "./js/nameChecker";
 console.log({ checkForName });
 console.log({ handleSubmit });
 
-console.log("Hello Webpack!");
+console.log("Hello Webpack! -- Version 113");
