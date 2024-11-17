@@ -7,4 +7,9 @@ function checkForName(inputText) {
   }
 }
 
-export { checkForName };
+function dontDoAnything() {
+  console.log("I don't do anything in this project!");
+}
+export { checkForName, dontDoAnything };
+
+

@@ -3,7 +3,7 @@ function handleSubmit(event) {
 
   // check what text was put into the form field
   let formText = document.getElementById("name").value;
-  checkForName(formText);
+  Client.checkForName(formText);
 
   console.log("::: Form Submitted :::");
   fetch("http://localhost:8080/test")
@@ -12,5 +12,10 @@ function handleSubmit(event) {
       document.getElementById("results").innerHTML = res.message;
     });
 }
-
-export { handleSubmit };
+function checkValidation() {
+  console.log("Checking form validation!");
+}
+function showErrorMessages() {
+  console.log("showing error messages!");
+}
+export { handleSubmit, checkValidation, showErrorMessages };

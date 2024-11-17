@@ -1,7 +1,9 @@
-import { handleSubmit } from "./js/formHandler";
-import { checkForName } from "./js/nameChecker";
+import { handleSubmit } from "./js/formHandler.js";
+import { checkForName } from "./js/nameChecker.js";
+import { liveFunction } from "./js/dead.js";
 
 console.log({ checkForName });
 console.log({ handleSubmit });
+console.log({ liveFunction });
 
-console.log("Hello Webpack! -- Version 113");
+export { checkForName, handleSubmit };
